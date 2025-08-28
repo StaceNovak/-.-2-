@@ -1,0 +1,9 @@
+
+
+courier_login | deliveries_in_progress
+--------------+----------------------
+   max        |          3
+   sofia      |          1
+   kate       |          0
+
+(3 rows)
