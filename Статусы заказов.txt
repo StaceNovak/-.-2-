@@ -1,5 +1,3 @@
-SELECT "Couriers".login, COUNT("Orders"."courierId")
-FROM "Couriers"
-INNER JOIN "Orders" ON "Couriers".id = "Orders"."courierId"
-WHERE "Orders"."inDelivery" = true
-GROUP BY "Couriers".login;
+SELECT status, COUNT(*) AS count_orders
+FROM "Orders"
+GROUP BY status;
